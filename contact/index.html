@@ -296,6 +296,41 @@
     flex-shrink: 0;
 }
 
+.__framer-editorbar-spinner {
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform-origin: 50% 50%;
+    will-change: transform;
+    animation: __framer-editorbar-spinner-spin 600ms linear infinite;
+}
+
+.__framer-editorbar-spinner svg {
+    display: block;
+    overflow: visible;
+}
+
+.__framer-editorbar-spinner-track, .__framer-editorbar-spinner-car {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px;
+}
+
+.__framer-editorbar-spinner-track {
+    opacity: 0.25;
+}
+
+.__framer-editorbar-spinner-car {
+    stroke-linecap: round;
+    stroke-dasharray: 30 70;
+}
+
+@keyframes __framer-editorbar-spinner-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #__framer-editorbar-label.__framer-editorbar-button-tooltip-visible {
     opacity: 1;
 }
@@ -384,4 +419,4 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- End of bodyEnd -->
 
 
-<iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=d72654cc82720d066f10462b92995d035f5dd41a03d7f42dbc9de0bf8e03b6ca&amp;source=isolak.framer.website&amp;features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Afalse%7D&amp;loadStart=1791218037632" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_hidden"></iframe></body></html>
+<iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=d72654cc82720d066f10462b92995d035f5dd41a03d7f42dbc9de0bf8e03b6ca&amp;source=isolak.framer.website&amp;features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Afalse%7D&amp;loadStart=1793100392693" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_hidden"></iframe></body></html>
